@@ -4,15 +4,15 @@
         <link href="style.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
-        <div class="wrap">
+        <div class="wrap" id="main">
             <div class="intro_bg">
                 <div class="header">
                     <div>
-                        <h1><a href="#">KYC's Portfolio</a></h1>
+                        <h1><a href="#main">KYC's Portfolio</a></h1>
                     </div>
                     <ul class="nav">
-                        <li><a href="#">About me</a></li>
-                        <li><a href="#">Skills</a></li>
+                        <li><a href="#about_me">About me</a></li>
+                        <li><a href="#skills">Skills</a></li>
                         <li><a href="#">Archiving</a></li>
                         <li><a href="#">Projects</a></li>
                     </ul>
@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="about_me">
-                <h1 class="about_me_main">
+                <h1 class="about_me_main" id="about_me">
                     ABOUT ME
                 </h1>
                 <div class="about_me_line">
@@ -95,32 +95,50 @@
                     </ul>
                 </div>
             </div>
-            <div class="skills">
+            <div class="skills" id="skills">
+                <div class="skills_main">
+                    What Can I Do?
+                </div>
                 <div class="item_container">
-                    <div class="producing">
+                    <div class="producing item">
                         <div>
-                            <a href="#"><img src="images/producing.jpg"></a>
+                            <a href="#"><img class="item_img" src="images/producing.jpg"></a>
                         </div>
                         Producing
                     </div>
-                    <div class="renderling">
+                    <div class="renderling item">
                         <div>
-                            <a href="#"><img src="images/rendering.jpg"></a>
+                            <a href="#"><img class="item_img" src="images/rendering.jpg"></a>
                         </div>
                         Rendering
                     </div>
-                    <div class="coding">
+                    <div class="coding item">
                         <div>
-                            <a href="#"><img src="images/coding.jpg"></a>
+                            <a href="#"><img class="item_img" src="images/coding.jpg"></a>
                         </div>
                         Coding
                     </div>
-                    <div class="photographic">
+                    <div class="photographic item">
                         <div>
-                            <a href="#"><img src="images/photographic.jpg"></a>
+                            <a href="#"><img class="item_img" src="images/photographic.jpg"></a>
                         </div>
                         Photographic
                     </div>
+                </div>
+            </div>
+            <div class="end_section">
+                <footer>
+                    <div class="logo">
+                        <div>
+                            <a href="#"><img class= logo_images src="images/logo_instagram.png"> </a>
+                            <a href="#"><img class= logo_images src="images/logo_github.svg"></a>
+                            <a href="#"><img class= logo_images src="images/logo_facebook.svg"></a>
+                            <a href="#"><img class= logo_images src="images/logo_tistory.png"></a>
+                        </div>
+                    </div>
+                </footer>
+                <div class="copyright">
+                    <span>&#169;</span> 2022. Kim Yea Chan. All rights reserved.
                 </div>
             </div>
         </div>

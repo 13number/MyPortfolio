@@ -6,15 +6,35 @@
     color: white;
     list-style: none;
     text-decoration: none;
-    border-collapse: none
+    border-collapse: none;
+    font-family: 'HSSaemaul-Regular';
+    font-size: 25px;
+    /* font-family: 'BMDOHYEON'; */
+
 }
+
+@font-face {
+    font-family: 'HSSaemaul-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSSaemaul-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'BMDOHYEON';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff') format('woff');
+    font-weight: normal;
+    font-style: normal; 
+}
+
+/* 공통사항 */
 
 .intro_bg{
     /* background: skyblue; */
     height: 580px;
     width: 100%;
     background-size: 1920px 580px;
-    background-image: url("images/main.jpg");
+    background-image:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("images/main.jpg");
 }
 
 .header{
@@ -29,6 +49,11 @@
     width: 300px;
     line-height: 80px;
 }
+
+.header>div>h1>a{
+    font-size: 35px;
+    font-weight: lighter;
+}
 .nav{
     display: flex;
     width: calc(1280px - 300px);
@@ -39,13 +64,24 @@
 .nav>li{
     margin-left: 80px;
     line-height: 80px;
+    font-size: 25px;
+    font-weight: lighter;
 }
 
+/* 헤더끝 */
+
 .intro_main{
-    margin: 40px auto;
+    margin: 120px auto 50px auto;
     width: 1280px;
     /* background: green; */
     text-align: center;
+    font-family: 'BMDOHYEON';
+
+}
+
+.intro_main>h1{
+    font-family: 'BMDOHYEON';
+    font-size: 50px;
 }
 
 .intro_description{
@@ -55,9 +91,11 @@
     margin: auto;
 }
 
+/* 메인 끝 */
+
 .about_me{
     width: 1080px;
-    height: 500px;
+    height: 550px;
     /* background: violet; */
     text-align: center;
     /* padding-top: 50px; */
@@ -66,15 +104,14 @@
 }
 
 .about_me_main{
-    font-size: 50px;
+    font-size: 90px;
     text-decoration:underline 2px;
     text-underline-offset: 20px;
     padding: 50px 0px 40px 0px;
     color: black;
 }
 .about_me_line{
-    padding: 40px 0px;
-    /* background: skyblue; */
+    padding: 40px 0px 40px 100px;
 }
 
 .about_me_line1{
@@ -119,6 +156,7 @@
     text-align: left;
     line-height: 40px;
     color: black;
+    font-weight:lighter;
 }
 .about_me_text>h3{
     color: black;
@@ -128,82 +166,84 @@
     color: black;
 }
 
+/* about_me 끝 */
 
 .skills{
     width: 100%;
-    height: 500px;
+    height: 700px;
     background: #f9c51d;
 }
-
+.skills_main{
+    padding-top: 50px;
+    margin: auto;
+    text-align: center;
+    font-size: 90px;
+    text-decoration:underline 2px;
+    text-underline-offset: 20px;
+}
 .item_container{
-    width: 1400px;
+    width: 1280px;
     display: flex;
     height: 300px;
     margin: auto;
-    padding-top: 70px;
+    padding-top: 80px;
     justify-content: space-around;
 }
 
 .item_container>div{
     width: 300px;
-    /* background: red; */
 }
 
-.item_container>.producing{
+.item{
+    font-size: 30px;
     text-align: center;
 }
-.item_container>.producing>div{
+.item >div{
     overflow: hidden;
     border-radius: 10%;
 }
 
-.item_container>.renderling{
-    text-align: center;
-}
-
-.item_container>.renderling>div{
-    overflow: hidden;
-    border-radius: 10%;
-}
-
-.item_container>.coding{
-    text-align: center;
-}
-
-.item_container>.coding>div{
-    overflow: hidden;
-    border-radius: 10%;
-}
-
-.item_container>.photographic{
-    text-align: center;
-}
-
-.item_container>.photographic>div{
-    overflow: hidden;
-    border-radius: 10%;
-}
-
-.producing>div>a>img{
+.item_img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.renderling>div>a>img{
+/* skills 끝 */
+.end_section{
     width: 100%;
-    height: 100%;
+    height: 200px;
+    background: #bb9696;
+    text-align: center;
+}
+
+.logo{
+    display: flex;
+    height: 50px;
+    padding-top: 70px;
+}
+.logo>div{
+    margin:auto;
+    width: 1280px;
+}
+
+.logo>div>a>img{
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    padding-inline: 10px;
+}
+
+.logo>div>a:last-child>img{
+    height: 45px;
     object-fit: cover;
 }
 
-.coding>div>a>img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.copyright{
+    padding-top: 20px;
+    font-weight: lighter;
 }
 
-.photographic>div>a>img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.copyright > span{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
