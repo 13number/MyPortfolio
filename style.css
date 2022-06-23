@@ -33,7 +33,7 @@
     /* background: skyblue; */
     height: 580px;
     width: 100%;
-    background-size: 1920px 580px;
+    background-size: cover;
     background-image:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("images/main.jpg");
 }
 
@@ -54,6 +54,7 @@
     font-size: 35px;
     font-weight: lighter;
 }
+
 .nav{
     display: flex;
     width: calc(1280px - 300px);
