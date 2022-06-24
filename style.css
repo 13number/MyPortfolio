@@ -138,15 +138,14 @@
 }
 
 /* 메인 끝 */
-
+.about_me_bg{
+    height: 550px;
+    width: 100%;
+}
 .about_me{
     width: 1080px;
-    height: 550px;
-    /* background: violet; */
     text-align: center;
-    /* padding-top: 50px; */
     margin: auto;
-
 }
 
 .about_me_main{
@@ -155,6 +154,7 @@
     text-underline-offset: 20px;
     padding: 50px 0px 40px 0px;
     color: black;
+    /* background: green; */
 }
 .about_me_line{
     padding: 40px 0px 40px 100px;

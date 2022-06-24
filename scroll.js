@@ -1,7 +1,7 @@
 
 const main = document.querySelector("#main");
 const nav = document.querySelectorAll(".nav_click");
-const about_me = document.querySelector(".about_me");
+const about_me = document.querySelector(".about_me_bg");
 const skills = document.querySelector(".skills");
 
 const main_position = main.offsetTop
@@ -13,7 +13,7 @@ nav[0].onclick = function(){
 }
 
 nav[1].onclick = function(){
-    window.scroll({top:nav1_position,behavior:'smooth'})
+    window.scroll({top:500,behavior:'smooth'})
 }
 
 nav[2].onclick = function(){
@@ -47,6 +47,8 @@ window.addEventListener('scroll', () => {
         headerText[2].classList.add('active_Text')
         headerText[3].classList.add('active_Text')
         headerText[4].classList.add('active_Text')
+        console.log(window.scrollY)
+
     }
     else{
         header.classList.add('deactive')
