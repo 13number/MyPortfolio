@@ -30,7 +30,7 @@
 /* 공통사항 */
 
 .intro_bg{
-    /* background: skyblue; */
+    background: skyblue;
     height: 580px;
     width: 100%;
     background-size: cover;
@@ -38,16 +38,30 @@
 }
 
 .header{
-    width: 1280px;
-    margin: auto;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    /* margin: auto; */
     display: flex;
     /* background: red; */
     height: 80px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
 }
+
+
+
 .header>div{
     /* background: black; */
-    width: 300px;
+    /* width: 300px; */
     line-height: 80px;
+    flex: 1;
+}
+
+.header>div>h1>a:hover{
+    cursor: pointer;
 }
 
 .header>div>h1>a{
@@ -60,19 +74,50 @@
     width: calc(1280px - 300px);
     justify-content: flex-end;
     font-weight:600;
+    /* background: green; */
+    justify-content: left;
+    flex: 1;
 }
 
 .nav>li{
     margin-left: 80px;
-    line-height: 80px;
+    /* line-height: 80px; */
     font-size: 25px;
     font-weight: lighter;
+    /* background: pink; */
+}
+.nav>li:hover{
+    border-bottom: 3px solid;
+    cursor: pointer;
 }
 
+.active{
+    background-color: white;
+    border-bottom: 2px solid gray;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    color: black;
+    -webkit-transition-duration:0.4s;
+    -webkit-transition-timing-function:ease;
+}
+  
+.deactive{
+    background-color: transparent;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    
+    -webkit-transition-duration:0.4s;
+    -webkit-transition-timing-function:ease;
+}
+.active_Text{
+    color: black;
+}
 /* 헤더끝 */
 
 .intro_main{
-    margin: 120px auto 50px auto;
+    padding-top: 200px;
+    margin: auto;
+    /* margin: 100px auto 50px auto; */
     width: 1280px;
     /* background: green; */
     text-align: center;
@@ -185,14 +230,16 @@
 .item_container{
     width: 1280px;
     display: flex;
-    height: 300px;
+    /* height: 300px; */
     margin: auto;
     padding-top: 80px;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .item_container>div{
     width: 300px;
+    /* background: blue; */
+    /* height: 400px; */
 }
 
 .item{
@@ -202,12 +249,19 @@
 .item >div{
     overflow: hidden;
     border-radius: 10%;
+    background: skyblue;
+    height: 100%;
+    width: 100%;
 }
 
 .item_img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: all 0.7s ease-in-out;
+}
+.item_img:hover{
+    transform: scale(1.2);
 }
 
 /* skills 끝 */
