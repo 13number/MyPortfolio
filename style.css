@@ -91,23 +91,23 @@
     cursor: pointer;
 }
 
-.active{
+.header.active{
     background-color: white;
     border-bottom: 2px solid gray;
     transition-duration: 0.5s;
     transition-timing-function: ease;
     color: black;
-    -webkit-transition-duration:0.4s;
-    -webkit-transition-timing-function:ease;
+    /* -webkit-transition-duration:0.4s; */
+    /* -webkit-transition-timing-function:ease; */
 }
   
-.deactive{
+.header.deactive{
     background-color: transparent;
     transition-duration: 0.5s;
     transition-timing-function: ease;
     
-    -webkit-transition-duration:0.4s;
-    -webkit-transition-timing-function:ease;
+    /* -webkit-transition-duration:0.4s; */
+    /* -webkit-transition-timing-function:ease; */
 }
 .active_Text{
     color: black;
@@ -135,6 +135,21 @@
     width: 1280px;
     text-align: center;
     margin: auto;
+}
+
+.audio{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.audio>audio{
+    vertical-align: middle;
+}
+
+.audio_discription{
+    padding: 10px;
+    text-align: center;
 }
 
 /* 메인 끝 */
@@ -249,7 +264,6 @@
 .item >div{
     overflow: hidden;
     border-radius: 10%;
-    background: skyblue;
     height: 100%;
     width: 100%;
 }
@@ -270,6 +284,7 @@
     height: 200px;
     background: #bb9696;
     text-align: center;
+    position: relative;
 }
 
 .logo{
@@ -301,4 +316,61 @@
 
 .copyright > span{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.go_up{
+    display: none;
+    opacity: 0;
+    position: fixed;
+    bottom: 30px;
+    right: 80px;
+    width: 50px;
+    height: 50px;
+    border: solid 2px rgb(51, 47, 47);
+    border-radius: 5px;
+    background: yellowgreen;
+    /* transition: all 2s;
+    transition-property: disple; */
+}
+
+.go_up.active{
+    display: block;
+    animation: fade-in 1s;
+    animation-fill-mode: both;
+}
+
+.go_up.deactive{
+    display: block;
+    animation: fade-out 1s;
+    animation-fill-mode: both;
+    pointer-events: none;
+}
+
+@keyframes fade-in{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+.go_up>img{
+    padding-top: 3px;
+    width: 30px;
+    object-fit: contain;
+}
+
+.go_up:hover{
+    cursor: pointer;
 }

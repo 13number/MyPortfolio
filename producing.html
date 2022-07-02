@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/7f7e63ffd7.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producing</title>
+    <link href="producing.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="main1">
+        <header>
+            <div class="go_back">
+                <a href="index.html"><i class="fa-solid fa-arrow-left fa-2x"></i></a>
+            </div>
+            <div class="search">
+                <a href="#"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a>
+            </div>
+        </header>
+        <section class="profile">
+            <div>
+                <img src="images/profile.jpg">
+            </div>
+            <span>
+                <h2>김예찬</h2>
+                <h3>R&B, hiphop</h3>
+            </span>
+        </section>
+        <section class="button_section">
+            <div>
+                <button class="button_suffle">Shuffle</button>
+                <button class="button_like" onclick="number_up()"><i class="fa-solid fa-heart"></i><span id="like_number">1004</span></button>
+            </div>
+        </section>
+        <section class="list">
+            <ul>
+                <li>
+                    <div class="list_img"><img src="images/잔잔슬픔.jpg"></div>
+                    <div class="list_contents">
+                        <h3>김예찬</h3><h2>잔잔한 슬픔</h2>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical fa-2x list_icon"></i>
+                </li>
+                <li>
+                    <div class="list_img"><img src="images/신나는.jpg"></div>
+                    <div class="list_contents">
+                        <h3>적재</h3><h2>별 보러가자</h2>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical fa-2x list_icon"></i>
+                </li>
+                <li>
+                    <div class="list_img"><img src="images/트렌디팝.jpg"></div>
+                    <div class="list_contents">
+                        <h3>적재</h3><h2>별 보러가자</h2>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical fa-2x list_icon"></i>
+                </li>
+                <li>
+                    <div class="list_img"><img src="images/혼란스러운.jpg"></div>
+                    <div class="list_contents">
+                        <h3>적재</h3><h2>별 보러가자</h2>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical fa-2x list_icon"></i>
+                </li>
+            </ul>
+        </section>
+        <section class="remoter"></section>
+    </div>
+    <div class="main2">
+        <div class="main2_background">
+            <header>
+                <div class="go_back">
+                    <a href="index.html"><i class="fa-solid fa-arrow-left fa-2x"></i></a>
+                </div>
+                <div class="option">
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical fa-2x list_icon"></i></a>
+                </div>
+            </header>
+            <div class="album_img"> <img src="images/신나는.jpg"></div>
+            <div class="music_content">
+                <h1>별 보러가자</h1>
+                <h3>적재</h3>
+            </div>
+            <div class="audio_bar">
+                audio area
+            </div>
+            <div class="controller">
+                <i class="fa-solid fa-repeat fa-2x"></i>
+                <i class="fa-solid fa-forward-fast fa-rotate-180 fa-2x"></i>
+                <i class="fa-solid fa-circle-play fa-4x"></i>
+                <!-- <i class="fa-solid fa-pause"></i> -->
+                <i class="fa-solid fa-forward-fast fa-2x"></i>
+                <i class="fa-solid fa-shuffle fa-2x"></i>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="numberup.js"></script>
+</body>
+</html>
