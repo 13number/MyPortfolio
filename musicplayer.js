@@ -159,7 +159,7 @@ function range_slider(){
 if(track.ended){
     play.innerHTML = '<i class="fa-solid fa-circle-play fa-4x" ></i>';
     if(repeat==1){
-        index_no += 1;
+        // index_no += 1;
         load_track(index_no);
         playingsong();
     }
