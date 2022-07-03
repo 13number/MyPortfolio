@@ -36,30 +36,30 @@
         <section class="list">
             <ul>
                 <li>
+                    <div class="list_img"><img src="images/트렌디팝.jpg"></div>
+                    <div class="list_contents">
+                        <h3>김예찬</h3><h2>Schneider</h2>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical fa-2x list_icon"></i>
+                </li>
+                <li>
                     <div class="list_img"><img src="images/잔잔슬픔.jpg"></div>
                     <div class="list_contents">
-                        <h3>김예찬</h3><h2>잔잔한 슬픔</h2>
+                        <h3>김예찬</h3><h2>Slow Lake</h2>
                     </div>
                     <i class="fa-solid fa-ellipsis-vertical fa-2x list_icon"></i>
                 </li>
                 <li>
                     <div class="list_img"><img src="images/신나는.jpg"></div>
                     <div class="list_contents">
-                        <h3>적재</h3><h2>별 보러가자</h2>
-                    </div>
-                    <i class="fa-solid fa-ellipsis-vertical fa-2x list_icon"></i>
-                </li>
-                <li>
-                    <div class="list_img"><img src="images/트렌디팝.jpg"></div>
-                    <div class="list_contents">
-                        <h3>적재</h3><h2>별 보러가자</h2>
+                        <h3>김예찬</h3><h2>Gag Concert</h2>
                     </div>
                     <i class="fa-solid fa-ellipsis-vertical fa-2x list_icon"></i>
                 </li>
                 <li>
                     <div class="list_img"><img src="images/혼란스러운.jpg"></div>
                     <div class="list_contents">
-                        <h3>적재</h3><h2>별 보러가자</h2>
+                        <h3>김예찬</h3><h2>Vacant</h2>
                     </div>
                     <i class="fa-solid fa-ellipsis-vertical fa-2x list_icon"></i>
                 </li>
@@ -77,24 +77,36 @@
                     <a href="#"><i class="fa-solid fa-ellipsis-vertical fa-2x list_icon"></i></a>
                 </div>
             </header>
-            <div class="album_img"> <img src="images/신나는.jpg"></div>
+            <div class="total">
+                <p id="present">1</p>
+                <p>/</p>
+                <p id="total">4</p>
+            </div>
+            <div class="album_img">
+                <img src="images/신나는.jpg" id="track_img">
+            </div>
+            <div class="volume_bar" >
+                <!-- <i class="fa-solid fa-volume-high"></i> -->
+                <input type="range" min="0" max="100" value="50" onchange="volume_change()" id="volume_bar">
+            </div>
             <div class="music_content">
-                <h1>별 보러가자</h1>
-                <h3>적재</h3>
+                <h1 id="title_song">별 보러가자</h1>
+                <h3 id="artist_song">적재</h3>
             </div>
             <div class="audio_bar">
-                audio area
+                <input type="range" min="0" max="100" value="0" onchange="music_duration_change()" id="slider_song">
             </div>
             <div class="controller">
-                <i class="fa-solid fa-repeat fa-2x"></i>
-                <i class="fa-solid fa-forward-fast fa-rotate-180 fa-2x"></i>
-                <i class="fa-solid fa-circle-play fa-4x"></i>
+                <span class="repeat_song_style"><i class="fa-solid fa-repeat fa-2x" onclick="repeat_song()" id="repeat_song"></i></span>
+                <i class="fa-solid fa-forward-fast fa-rotate-180 fa-2x" onclick="previous_song()" id="previous_song"></i>
+                <span onclick="justplay()" id="play_song"><i class="fa-solid fa-circle-play fa-4x" ></i></span>
                 <!-- <i class="fa-solid fa-pause"></i> -->
-                <i class="fa-solid fa-forward-fast fa-2x"></i>
-                <i class="fa-solid fa-shuffle fa-2x"></i>
+                <i class="fa-solid fa-forward-fast fa-2x" onclick="next_song()" id="next_song"></i>
+                <i class="fa-solid fa-shuffle fa-2x" onclick="shuffle_song()" id="shuffle_song"></i>
             </div>
         </div>
     </div>
     <script type="text/javascript" src="numberup.js"></script>
+    <script type="text/javascript" src="musicplayer.js"></script>
 </body>
 </html>

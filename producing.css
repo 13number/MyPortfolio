@@ -191,6 +191,7 @@ header{
 .main2{
     flex: 1;
     padding: 10px;
+    position: relative;
 }
 .main2_background{
     width: 100%;
@@ -201,6 +202,20 @@ header{
     background: var(--white-background-color)
 }
 
+.total{
+    display: flex;
+    width: 50px;
+    height: 32px;
+    margin: auto;
+    border: 1px black solid;
+    border-radius: 8px;
+    justify-content: center;
+}
+.total>p{
+    line-height: 28px;
+    font-size: 20px;
+}
+
 .album_img{
     width: 520px;
     height: 520px;
@@ -208,11 +223,26 @@ header{
     overflow: hidden;
     border-radius: 20px;
     box-shadow: 10px 15px 30px -5px rgb(138, 124, 124);
+    /* background: red; */
 }
 .album_img>img{
     width: 520px;
     height: 520px;
     object-fit: contain;
+
+}
+
+/* #volume_bar_area{
+    
+} */
+
+#volume_bar{
+    background: blue;
+    width: 400px;
+    transform: rotate(-90deg);
+    position: absolute;
+    right: -30px;
+    top: 430px;
 }
 
 .music_content{
@@ -222,8 +252,27 @@ header{
 }
 .audio_bar{
     height: 50px;
-    background: skyblue;
+    /* background: skyblue; */
+    text-align: center;
 }
+input[type="range"]{
+    width: 550px;
+    appearance: none;
+    outline: none;
+    height: 2px;
+    text-align: center;
+    background: lightgray;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    background: var(--brown-dark-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 
 .controller{
     margin: auto;
@@ -234,7 +283,7 @@ header{
     align-items: center;
 }
 
-.controller>i{
+.controller>i,span{
     text-align: center;
     cursor: pointer;
 }
