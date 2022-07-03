@@ -36,7 +36,7 @@ let All_song = [
     },
     {
         name: "Gag Concert",
-        path: "audio/gagconcert.mp3",
+        path: "audio/gagconcert.wav",
         img: "images/신나는.jpg",
         singer: "김예찬",
     },
