@@ -29,9 +29,9 @@ let All_song = [
         singer: "김예찬",
     },
     {
-        name: "Slow Lake",
-        path: "audio/SlowLake.mp3",
-        img: "images/잔잔슬픔.jpg",
+        name: "Dark Toy",
+        path: "audio/darktoy.mp3",
+        img: "images/darktoy.jpg",
         singer: "김예찬",
     },
     {
