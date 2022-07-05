@@ -1,3 +1,19 @@
+// nav바 토글버튼
+
+const toggleBtn = document.querySelector(".navbar_toggleBtn");
+const nav_list = document.querySelector(".nav");
+const audio = document.querySelector(".audio")
+
+toggleBtn.addEventListener('click',()=>{
+    nav_list.classList.toggle("active");
+    audio.classList.toggle("active");
+});
+
+
+
+
+
+
 // 누르면 그위치로 이동
 
 const main = document.querySelector("#main");
@@ -31,6 +47,7 @@ go_up.onclick = function(){
 const header = document.querySelector("#header");
 const headerHeight = header.getBoundingClientRect().height
 const headerText = document.querySelectorAll(".nav_click")
+const audio_discription = document.querySelector(".audio_discription");
 
 window.addEventListener('scroll', () => {
     if(window.scrollY > headerHeight ){
@@ -41,6 +58,7 @@ window.addEventListener('scroll', () => {
         headerText[2].classList.add('active_Text')
         headerText[3].classList.add('active_Text')
         headerText[4].classList.add('active_Text')
+        audio_discription.classList.add('active_Text')
         console.log(window.scrollY)
         // go_up.classList.add('active')
         // go_up.classList.remove('deactive')
@@ -55,11 +73,14 @@ window.addEventListener('scroll', () => {
         headerText[2].classList.remove('active_Text')
         headerText[3].classList.remove('active_Text')
         headerText[4].classList.remove('active_Text')
+        audio_discription.classList.remove('active_Text')
         // go_up.classList.add('deactive')
         // go_up.classList.remove('active')
 
     }
 });
+
+
 
 // 어느 정도 내리면 업 버튼 보이게
 
