@@ -410,8 +410,13 @@ body{
         display: none;
         margin-top: -2.5px;
     }
+    .audio>audio{
+        width: 50%;
+    }
     .audio_discription{
         color: black;
+        font-size: 20px;
+        line-height: 20px;
     }
     .nav{
         margin-top: -2.5px;
@@ -464,29 +469,43 @@ body{
     .audio.active{
         display: flex;
     }
-
+    .intro_main{
+        margin-bottom: 20px;
+    }
+    .intro_main>h1{
+        font-size: 40px;
+    }
+    .about_me_bg{
+        height: auto;
+    }
     .about_me_line{
-        width: 390px;
+        width: auto;
+        height: auto;
+        padding: 10px;
     }
     .about_me_line>li{
         display: flex;
-        width: 280px;
+        width: 100%;
         margin: 15px;
     }
     .skills{
-        height: 1000px;
+        width: auto;
+        height: auto;
     }
-
+    .skills_main{
+        font-size: 65px;
+    }
     .item_container{
-        width: 390px;
+        width: 100%;
         justify-content: space-around;
+        padding-bottom: 30px;
     }
     .item{
         padding: 30px;
     }
 }
 
-@media (min-width:391) and (max-width: 767px){
+@media screen and (min-width:391) and (max-width: 767px){
     .header{
         flex-direction: column;
         align-items: flex-start;
@@ -504,6 +523,7 @@ body{
         display: none;
         margin-top: -2.5px;
     }
+   
     .audio_discription{
         color: black;
     }
