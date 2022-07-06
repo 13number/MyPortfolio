@@ -3,6 +3,7 @@
     /* color */
     --white-color: #fff;
     --grey-light-color: rgb(204,210,211);
+    --grey-color:rgb(126, 132, 134);
     --brown-dark-color: rgb(37,37,37);
     --white-background-color: #f5f5f5;
 
@@ -12,6 +13,9 @@
 
     /* font size */
 
+    /* font */
+    --font-artist: 'GowunBatang-Regular';
+    --font-song: 'NanumSquareRound';
 }
 
 *{
@@ -23,6 +27,28 @@
     text-decoration: none;
     border-collapse: none; */
 }
+
+@font-face {
+    font-family: 'GowunBatang-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 body{
     display: flex;
@@ -68,6 +94,13 @@ header{
 .profile>span{
     margin: 30px;
     text-align: center;
+}
+.profile>span>h2{
+    font-family: var(--font-artist);
+}
+.profile>span>h3{
+    color: var(--grey-color);
+    font-family: var(--font-song);
 }
 
 .button_section{
@@ -177,7 +210,14 @@ header{
 .list_contents{
     flex: 8;
 }
-
+.list_contents>h3{
+    font-family: var(--font-artist);
+    color: var(--grey-color);
+}
+.list_contents>h2{
+    font-family: var(--font-song);
+    line-height: 40px;
+}
 .list_icon{
     padding-right: 10px;
     width: 10px;
@@ -247,6 +287,13 @@ header{
     margin: 20px;
     text-align: center;
     line-height: 40px;
+}
+.music_content>h1{
+    font-family: var(--font-song);
+}
+.music_content>h3{
+    color: var(--grey-color);
+    font-family: var(--font-artist);
 }
 .audio_bar{
     height: 50px;
@@ -325,6 +372,9 @@ input[type="range"]::-webkit-slider-thumb{
     }
     .list>ul>li{
         width: 80%;
+    }
+    .list_contents{
+        padding-left: 20px;
     }
     .main2{
         width: 100%;
