@@ -510,7 +510,7 @@ body{
     }
 }
 
-@media screen and (min-width:391) and (max-width: 767px){
+@media screen and (min-width:390px) and (max-width: 767px){
     .header{
         flex-direction: column;
         align-items: flex-start;
